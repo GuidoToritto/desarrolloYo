@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*BODY*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.body{
+    background-color: rgb(49, 49, 49);
+    display: grid;
+    grid-template-areas: "header"
+                         "main"  
+                         "footer";
+    grid-template-rows: 0.5fr 2fr 0.1fr;
+    grid-template-columns: auto;
+}
+
+/*HEADER*/
+.header{
+    text-shadow: 3px 3px 3px gray;
+    grid-area: header;
+    background-color: black;
+    color: aliceblue;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+
+.titulo{
+    padding-left: 80px;
+}
+/*
+justify-content: alinea horizontalmente
+align-items: alinea verticalmente   
+*/
+
+
+
+.nav{
+    grid-area: nav;
+    width: 100%;
+}
+
+.ul{
+    border-radius: 10px;
+    background-color: gray;
+    color: aliceblue;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+.navItem{
+    margin: 10px;
+    font-size: 20px;
+    font-style:italic;
+    text-shadow:3px 3px 3px black;
+}
+
+/*IMAGENES DE MAIN*/
+.div1{
+    
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+}
+.div2{
+    
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+}
+.div3{
+    
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+}
+.div4{
+    
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+}
+
+/*MAIN*/
+
+.main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:gray;
+    color: aliceblue;
+    width: 100%;
+    height: 76vh;
+}
+
+/*CONTENEDOR DE IMAGEN Y LOREM*/
+
+.img{
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40);
+}
+.lorem{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    height: 5vh;
+    text-shadow:1px 1px 1px black;
+    color: aliceblue;
+}
+
+
+
+
+
+/*SOBRE NOSOTROS*/
+.sobrenosotros{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:gray;
+    color: aliceblue;
+    width: 50%;
+    height: 76vh;
+}
+
+.imgsb{
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40);
+}
+
+.sobrenosotroslorem{
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+
+}
+
+
+/*Contacto*/
+
+/*BODY*/
+.bodycontacto{
+    background-color: rgb(49, 49, 49);
+    display: grid;
+    grid-template-areas: "headercontacto"
+                         "maincontacto"  
+                         "footercontacto";
+    grid-template-rows: 0.5fr 2fr 0.1fr;
+    grid-template-columns: 100%;
+}
+
+/*HEADER*/
+.headercontacto{
+    text-shadow: 3px 3px 3px gray;
+    grid-area: headercontacto;
+    background-color: black;
+    color: aliceblue;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+}
+
+.navcontacto{
+    grid-area: navcontacto;
+    width: 100%;
+}
+
+/*MAIN*/
+.maincontacto{
+    display: flex;
+    background-color:gray;
+    color: aliceblue;
+    width: 100%;
+    height: 76vh;
+    justify-content: center;
+    align-items: center;
+    grid-area: maincontacto;
+}
+
+.divcontacto{
+    margin: 40px;
+    grid-area: divcontacto;
+}
+
+/*Imagen e información*/
+.imgcontacto{
+    width: 100%;
+    height: 300px;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40);
+}
+
+.contactolorem{
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.contactoul{
+    font-size: 1.5rem;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FOOTER*/
+.footercontacto{
+    grid-area: footercontacto;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    height: 5vh;
+    text-shadow:1px 1px 1px black;
+    color: aliceblue;
+}
+
+
+
+/*MOBILE*/
+@media (max-width: 1216px) {
+    .body{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0,5fr 1,4fr 0,1fr;
+        grid-template-areas:
+                             "header"
+                             "main"
+                             "footer";
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .header{
+        grid-area: header;
+    }
+    .main{
+        background-color: rgb(58, 58, 58);
+        overflow: scroll;
+        height: 100vh;
+        grid-area: main;
+    }
+    .navcontacto{
+        grid-area: navcontacto;
+        width: 100%;
+    }
+}
+
+
+/*MOBILE CONTACTOS*/
+/*SMARTPHONE*/
+@media (max-width: 1216px) {
+    .bodycontacto{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0,5fr 1,4fr 0,1fr;
+        grid-template-areas:
+                             "headercontacto"
+                             "maincontacto"
+                             "footercontacto";
+    }
+    .footercontacto{
+        grid-area: footercontacto;
+    }
+    .headercontacto{
+        grid-area: headercontacto;
+    }
+    .maincontacto{
+        background-color: rgb(58, 58, 58);
+        overflow: scroll;
+        height: 100vh;
+        grid-area: maincontacto;
+    }
+    .navcontacto{
+        grid-area: navcontacto;
+    }
+}
+
