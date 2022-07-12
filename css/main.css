@@ -140,7 +140,12 @@ align-items: alinea verticalmente
     color: aliceblue;
 }
 
+/*animaciones nuevas*/
 
+header h1:hover{
+    color: green;
+    font-weight: bold;
+}
 
 
 
